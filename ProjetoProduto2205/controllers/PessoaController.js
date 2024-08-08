@@ -66,7 +66,7 @@ controller.getById = async (req, res) => {
         }
 
         const pessoas = [pessoa]
-        res.status(200).render("pessoas/index",{pessoas: pessoas})
+        res.status(200).render("pessoas/show",{pessoas: pessoas})
     }catch(error){ 
         res.status(422).render("Ocorreu um erro ao buscar o item. " + error)
     }
